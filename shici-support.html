@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for Read Poetry, a classical Chinese poetry reading and listening app.">
+  <title>Read Poetry — Support</title>
+  <style>
+    :root {
+      --paper: #f5edd8;
+      --ink: #1a1008;
+      --muted: #6b6256;
+      --vermillion: #a52a22;
+      --border: #d9cdb4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans SC", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand { font-weight: 700; }
+    .brand span { color: var(--vermillion); }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    h1 { margin: 32px 0 8px; font-size: clamp(1.75rem, 5vw, 2.25rem); line-height: 1.2; }
+    h2 { margin: 34px 0 8px; font-size: 1.2rem; line-height: 1.35; }
+    p, li { max-width: 68ch; }
+    ul { padding-left: 1.25rem; }
+
+    a {
+      color: var(--vermillion);
+      text-underline-offset: 0.16em;
+    }
+
+    a:hover { color: #73201a; }
+    a:focus-visible {
+      outline: 3px solid #275d7a;
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 12px;
+      top: -48px;
+      z-index: 1;
+      padding: 8px 12px;
+      background: #fffaf0;
+      border: 1px solid var(--vermillion);
+    }
+    .skip-link:focus { top: 12px; }
+
+    .lead { color: var(--muted); font-size: 1.08rem; }
+    .contact-card {
+      margin-top: 18px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--vermillion);
+      border-radius: 4px;
+      background: #fffaf0;
+    }
+
+    footer {
+      margin-top: 44px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 420px) {
+      body { padding: 24px 16px 36px; }
+      header { align-items: flex-start; }
+      nav ul { gap: 10px 14px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <div class="brand">Read Poetry <span lang="zh-Hans">读诗</span></div>
+    <nav aria-label="Support links">
+      <ul>
+        <li><a href="shici-privacy.html">Privacy</a></li>
+        <li><a href="shici-terms.html">Terms</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>How can we help?</h1>
+    <p class="lead">Support for Read Poetry (<span lang="zh-Hans">读诗</span>), a calm way to read, listen to, and study classical Chinese poetry.</p>
+
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact support</h2>
+      <div class="contact-card">
+        <p>If you need help with the app, please email <a href="mailto:info@shenbee.com">info@shenbee.com</a>. Include your device model, iOS version, and a short description of what happened. Please do not send passwords, payment details, or other sensitive information.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="purchase-heading">
+      <h2 id="purchase-heading">Premium purchases and restores</h2>
+      <p>Read Poetry Premium is a one-time purchase that permanently unlocks the full poem collection for the store account that bought it.</p>
+      <ul>
+        <li>If Premium does not appear after reinstalling or changing devices, open the app’s Settings and choose <strong>Restore Purchases</strong>.</li>
+        <li>Apple App Store purchases are handled by Apple. For a refund request, use Apple’s purchase support process for the account that made the purchase.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="photos-heading">
+      <h2 id="photos-heading">Saving poem illustrations</h2>
+      <p>When you choose to save an illustration, Read Poetry asks only for permission to add that image to your photo library. It does not read your existing photo library or upload your photos.</p>
+    </section>
+
+    <section aria-labelledby="privacy-heading">
+      <h2 id="privacy-heading">Privacy and terms</h2>
+      <p>Read our <a href="shici-privacy.html">Privacy Policy</a> and <a href="shici-terms.html">Terms of Service</a> for information about local preferences, purchases, support emails, and your use of the app.</p>
+    </section>
+  </main>
+
+  <footer>
+    Read Poetry (<span lang="zh-Hans">读诗</span>) support · Shenbee
+  </footer>
+</body>
+</html>
