@@ -25,8 +25,8 @@
 <h3>3. Location</h3>
 <p>When you start a trip, the operating system provides location to an Android location foreground service or iOS Core Location so the app can estimate distance to coordinates you saved. Location is processed only on your device. We do not upload tracks, and location is never passed to the advertising SDK, RevenueCat or any other third party.</p>
 <h3 id="ads">4. Advertising (Google AdMob)</h3>
-<p>The free version shows a banner ad at the bottom of the screen, provided by Google AdMob through the Google Mobile Ads SDK. To serve and measure ads (advertising and analytics) and to prevent fraud, Google may collect and process information such as your device advertising ID (Android Advertising ID / Apple IDFA where permitted), other device identifiers, IP address, device and app information, ad interactions and your consent choice. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-<p><strong>Consent.</strong> Where required by law (for example in the EEA, UK and Switzerland), Commute Alarm shows Google's User Messaging Platform (UMP) consent message before ads are requested. You can change your choice at any time in the app's Settings → Ad privacy options (privacy options).</p>
+<p>The free version shows a banner ad at the bottom of the screen, provided by Google AdMob through the Google Mobile Ads SDK. We request non-personalized ads. To serve and measure ads (advertising and analytics) and to prevent fraud, Google may collect and process information such as your Android advertising ID, other device identifiers, IP address, device and app information, ad interactions and your consent choice. On iOS, the app does not request App Tracking Transparency permission, so it does not access or use the IDFA. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p><strong>Consent.</strong> Where required by law (the EEA, UK, Switzerland and certain US states), Commute Alarm shows Google's User Messaging Platform (UMP) consent message before ads are requested. You can change your choice at any time in the app's Settings → Ad privacy options; this option appears only when the platform requires it.</p>
 <h3 id="purchases">5. In-app purchases (RevenueCat)</h3>
 <p>“Remove ads” is an optional US$0.99 one-time purchase processed by Google Play Billing or Apple In-App Purchase. We use RevenueCat, Inc. to validate and restore it. RevenueCat receives an anonymous app-user ID and your purchase history from the store, used only for app functionality (unlocking and restoring the purchase). We never see your payment details. See <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</p>
 <h3>6. Third parties</h3>
@@ -36,7 +36,7 @@
 <h3>8. Children</h3>
 <p>Commute Alarm is a general-audience app and is not directed at children under 13. We do not knowingly collect personal information from children.</p>
 <h3 id="choices">9. Your choices</h3>
-<p>Change ad consent in Settings → Ad privacy options. Reset or delete your advertising ID on your device: on Android, Settings → Google → Ads (or Settings → Privacy → Ads); on iOS, Settings → Privacy &amp; Security → Tracking. Buying “Remove ads” stops ads from being shown.</p>
+<p>Change ad consent in Settings → Ad privacy options (shown only when the platform requires it). Reset or delete your advertising ID on your device: on Android, Settings → Google → Ads (or Settings → Privacy → Ads); on iOS, Settings → Privacy &amp; Security → Tracking. Buying “Remove ads” stops ads from being shown.</p>
 <h3 id="delete">10. Deleting your data</h3>
 <p>Use Settings → Clear app data, or uninstall the app. There is no cloud copy of your favourites or trips. To delete your RevenueCat purchase record, see <a href="https://maliangone.github.io/legal/commute-alarm-delete-data.html">Data Deletion</a>. If you email us, we only hold the contents of that email.</p>
 <h3>11. Map data</h3>
@@ -58,8 +58,8 @@
 <h3>3. 位置</h3>
 <p>你主动开始行程后，系统定位会提供给 Android 前台服务或 iOS Core Location，用于估算与已保存坐标的距离。位置仅在本机处理，我们不上传轨迹，也绝不会把位置提供给广告 SDK、RevenueCat 或其他第三方。</p>
 <h3>4. 广告（Google AdMob）</h3>
-<p>免费版会在屏幕底部显示由 Google AdMob（通过 Google 移动广告 SDK）提供的横幅广告。为展示和衡量广告（广告与分析）以及防止作弊，Google 可能收集和处理你的设备广告 ID（Android 广告 ID / 在允许时的 Apple IDFA）、其他设备标识符、IP 地址、设备和应用信息、广告互动以及你的同意选择。详见 <a href="https://policies.google.com/technologies/partner-sites">Google 如何使用使用其服务的网站或应用中的信息</a> 与 <a href="https://policies.google.com/privacy">Google 隐私政策</a>。</p>
-<p><strong>同意。</strong>在法律要求的地区（如欧洲经济区、英国、瑞士），到站提醒会在请求广告前通过 Google 用户消息平台（UMP）显示同意提示。你可随时在应用「设置 → 广告隐私选项」中更改。</p>
+<p>免费版会在屏幕底部显示由 Google AdMob（通过 Google 移动广告 SDK）提供的横幅广告，我们只请求非个性化广告。为展示和衡量广告（广告与分析）以及防止作弊，Google 可能收集和处理你的 Android 广告 ID、其他设备标识符、IP 地址、设备和应用信息、广告互动以及你的同意选择。在 iOS 上，本应用不请求「App 跟踪透明度」授权，因此不会访问或使用 IDFA。详见 <a href="https://policies.google.com/technologies/partner-sites">Google 如何使用使用其服务的网站或应用中的信息</a> 与 <a href="https://policies.google.com/privacy">Google 隐私政策</a>。</p>
+<p><strong>同意。</strong>在法律要求的地区（欧洲经济区、英国、瑞士以及美国部分州），到站提醒会在请求广告前通过 Google 用户消息平台（UMP）显示同意提示。你可随时在设置中的「广告隐私选项」中更改；该选项仅在平台要求时显示。</p>
 <h3>5. 应用内购买（RevenueCat）</h3>
 <p>「去除广告」是可选的 0.99 美元一次性购买，由 Google Play 结算或 Apple 应用内购买处理。我们使用 RevenueCat, Inc. 验证和恢复购买；RevenueCat 会收到一个匿名的应用用户 ID 以及商店提供的购买记录，仅用于应用功能（解锁和恢复购买）。我们不会看到你的支付信息。详见 <a href="https://www.revenuecat.com/privacy">RevenueCat 隐私政策</a>。</p>
 <h3>6. 第三方</h3>
@@ -69,7 +69,7 @@
 <h3>8. 儿童</h3>
 <p>本应用面向一般用户，并非专为 13 岁以下儿童设计。我们不会有意收集儿童的个人信息。</p>
 <h3>9. 你的选择</h3>
-<p>在「设置 → 广告隐私选项」中更改广告同意。在设备上重置或删除广告 ID：Android 为「设置 → Google → 广告」（或「设置 → 隐私 → 广告」）；iOS 为「设置 → 隐私与安全性 → 跟踪」。购买「去除广告」后将不再显示广告。</p>
+<p>在设置中的「广告隐私选项」中更改广告同意（仅在平台要求时显示）。在设备上重置或删除广告 ID：Android 为「设置 → Google → 广告」（或「设置 → 隐私 → 广告」）；iOS 为「设置 → 隐私与安全性 → 跟踪」。购买「去除广告」后将不再显示广告。</p>
 <h3>10. 删除数据</h3>
 <p>使用「设置 → 清除本机数据」或卸载。收藏和行程没有云端副本。如需删除 RevenueCat 购买记录，请见<a href="https://maliangone.github.io/legal/commute-alarm-delete-data.html">数据删除</a>。</p>
 <h3>11. 地图数据</h3>
