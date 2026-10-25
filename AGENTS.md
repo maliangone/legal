@@ -1,6 +1,6 @@
 # AGENTS.md — shared instructions for Codex and Cursor Agent
 
-> **先读 / Read first:** /home/box/dev/TEAM_CONTEXT.md（团队规则、分工、目录、各 app 现状）。
+> **先读 / Read first:** /home/box/dev/TEAM_CONTEXT.md（规矩、目录、密钥位置、API 用法）；做审计、运营或市场的活时再读 /home/box/dev/TEAM_STATUS.md（分工、各 app 现状、文案规矩）。
 
 Both Codex (CLI) and Cursor Agent (CLI) read this file. They take turns on this same local folder on the shared box, so keep it the single source of truth for how to work here.
 
