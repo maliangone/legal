@@ -30,25 +30,23 @@ details on what we store.</p>
   <li>Tap <strong>Delete account</strong>.</li>
   <li>Read the confirmation, then tap <strong>Delete</strong>.</li>
 </ol>
-<p>This immediately deletes your cloud account (Firebase Auth user and the server-side
-quota / subscription-status record for that account) and wipes on-device data: encrypted
+<p>This deletes your Firebase sign-in account, the <code>users/{uid}</code> cloud record,
+usage counters, and request logs. Local data on the device is wiped: encrypted
 divination history, birth profiles, chat images, encryption keys, preferences, and caches.
 You are then signed out of Google and the purchase SDK.</p>
 <p><strong>Deleting the account does not cancel an active Google Play subscription.</strong>
 Cancel billing in Google Play (Subscriptions) if you no longer want to be charged.</p>
 
 <h2>2. Email fallback</h2>
-<p>If you cannot use the in-app path (for example the App is uninstalled, or cloud deletion
-did not complete), email us at
-<a href="mailto:info@shenbee.com">info@shenbee.com</a>
-<strong>from the Google account email you signed in with</strong>, with the subject line
-<code>Delete my account — Augur</code>. We will delete the remaining account record and
-associated server data within 30 days and confirm by email.</p>
+<p>If in-app deletion doesn't work, email
+<a href="mailto:maliangoneone@gmail.com">maliangoneone@gmail.com</a>
+with the subject <code>Delete my account — Augur</code> from your sign-in email.
+We'll handle it within 30 days.</p>
 
 <h2>3. What is deleted vs. retained</h2>
 <p><strong>Deleted by the in-app action (or by the email request):</strong> your Firebase
-Auth account; the server-side user record used for quota and subscription status; local
-encrypted history, birth profiles, images, keys, and caches.</p>
+sign-in account; the <code>users/{uid}</code> cloud record, usage counters, and request logs;
+local encrypted history, birth profiles, images, keys, and caches.</p>
 <p><strong>Retained:</strong> Google Play and RevenueCat purchase / tax / fraud-prevention
 records, according to their policies. Webhook idempotency records are not keyed to your
 account and expire on their own schedule. Uninstalling the App without deleting the account
@@ -57,6 +55,6 @@ or the email fallback.</p>
 
 <h2>4. Contact</h2>
 <p>Questions about account deletion? Email
-<a href="mailto:info@shenbee.com">info@shenbee.com</a>.</p>
+<a href="mailto:maliangoneone@gmail.com">maliangoneone@gmail.com</a>.</p>
 </body>
 </html>
