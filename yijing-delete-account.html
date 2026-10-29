@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>易问 (Augur) — Delete Account</title>
+<style>
+  body{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans SC",sans-serif;
+       max-width:760px;margin:40px auto;padding:0 20px;line-height:1.7;color:#0A0E27;background:#f5f1e6}
+  h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.8em}
+  a{color:#b8860b}code{background:#fff;padding:1px 4px;border-radius:4px}
+  ol{padding-left:1.2em}li{margin:.4em 0}
+  .muted{color:#6b6256;font-size:.9rem}
+</style>
+</head>
+<body>
+<h1>Delete Account — 易问 (Augur)</h1>
+<p class="muted">Last updated: 29 October 2026</p>
+
+<p>This page explains how to delete an account and associated data for the
+<strong>易问 (Augur)</strong> app, published by <strong>Shenbee</strong>. See our
+<a href="https://maliangone.github.io/legal/yijing-privacy.html">Privacy Policy</a> for full
+details on what we store.</p>
+
+<h2>1. Delete in the app (recommended)</h2>
+<p>If the App is installed on your device:</p>
+<ol>
+  <li>Open <strong>易问 (Augur)</strong>.</li>
+  <li>Go to <strong>Me</strong> → <strong>Settings</strong>.</li>
+  <li>Tap <strong>Delete account</strong>.</li>
+  <li>Read the confirmation, then tap <strong>Delete</strong>.</li>
+</ol>
+<p>This immediately deletes your cloud account (Firebase Auth user and the server-side
+quota / subscription-status record for that account) and wipes on-device data: encrypted
+divination history, birth profiles, chat images, encryption keys, preferences, and caches.
+You are then signed out of Google and the purchase SDK.</p>
+<p><strong>Deleting the account does not cancel an active Google Play subscription.</strong>
+Cancel billing in Google Play (Subscriptions) if you no longer want to be charged.</p>
+
+<h2>2. Email fallback</h2>
+<p>If you cannot use the in-app path (for example the App is uninstalled, or cloud deletion
+did not complete), email us at
+<a href="mailto:info@shenbee.com">info@shenbee.com</a>
+<strong>from the Google account email you signed in with</strong>, with the subject line
+<code>Delete my account — Augur</code>. We will delete the remaining account record and
+associated server data within 30 days and confirm by email.</p>
+
+<h2>3. What is deleted vs. retained</h2>
+<p><strong>Deleted by the in-app action (or by the email request):</strong> your Firebase
+Auth account; the server-side user record used for quota and subscription status; local
+encrypted history, birth profiles, images, keys, and caches.</p>
+<p><strong>Retained:</strong> Google Play and RevenueCat purchase / tax / fraud-prevention
+records, according to their policies. Webhook idempotency records are not keyed to your
+account and expire on their own schedule. Uninstalling the App without deleting the account
+removes local data but leaves the cloud account until you use Settings → Delete account
+or the email fallback.</p>
+
+<h2>4. Contact</h2>
+<p>Questions about account deletion? Email
+<a href="mailto:info@shenbee.com">info@shenbee.com</a>.</p>
+</body>
+</html>
