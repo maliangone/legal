@@ -29,17 +29,19 @@ locally on your device.</p>
 <h2>2. Signing in with Google</h2>
 <p>To use the online interpretation features, you may sign in with Google. When you do, we receive
 from Google your <strong>email address, display name, and a Google account identifier</strong>,
-which we use to create your account, sync your divination history across the feature, and manage
-your subscription status. We do not receive your Google password.</p>
+which we use to create your account and manage your subscription status. We do not receive your
+Google password. Conversation history remains local to the device.</p>
 
 <h2>3. Content you create and how it is processed</h2>
-<p>When you request an online interpretation, the App stores your <strong>divination records</strong>
-— the cast hexagram, the deterministically-selected classical text, your questions, and the
-interpretation conversation — in our cloud database (<strong>Google Firebase / Cloud Firestore</strong>).
-To generate the plain-language interpretation, your <strong>question text together with the selected
-classical text</strong> is sent to our interpretation provider, <strong>DeepSeek</strong>, which
-processes it to return the interpretation. We send only what is needed to produce the reading; we do
-not send your name or email to the interpretation provider.</p>
+<p>The App stores your <strong>divination records</strong> — the cast hexagram, the selected
+classical text, questions, answers, and any attached images — in encrypted local storage on your
+device. Images are saved as separately encrypted local files and are used for the current reading
+and later follow-up questions. They are not included as image files in history exports.</p>
+<p>When you request an online interpretation, the question, selected classical context, and any
+images you actively attach are sent through our backend to <strong>DeepSeek</strong> to produce the
+answer. The backend does not persist image files in Firestore, object storage, or its own disk, and
+we do not send your name or email to the interpretation provider. We do not make promises about
+DeepSeek's own retention practices; consult its current policies for that information.</p>
 
 <h2>4. Subscriptions and purchases</h2>
 <p>The App offers an auto-renewing subscription that unlocks deeper, multi-turn interpretation and a
@@ -58,20 +60,22 @@ you can change those choices. See
 <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
 <h2>6. Data retention and deletion</h2>
-<p>You can delete your account in the App: <strong>Me → Settings → Delete account</strong>.
-That removes the Firebase sign-in account, the <code>users/{uid}</code> cloud record,
-usage counters, and request logs, and wipes local history, birth profiles, images,
-encryption keys, and caches. An active Google Play subscription is not cancelled by
-deletion; cancel it in Google Play. If in-app deletion doesn't work, email
-<a href="mailto:maliangoneone@gmail.com">maliangoneone@gmail.com</a> with the subject
-"Delete my account — Augur" from your sign-in email. We'll handle it within 30 days.
-Step-by-step instructions:
-<a href="https://maliangone.github.io/legal/yijing-delete-account.html">Delete Account</a>.
-Purchase records held by Google and RevenueCat follow their respective policies.</p>
+<p>Deleting a history item removes its local encrypted image files and conversation record.</p>
+<p>To delete your account, use <strong>Me → Settings → Delete account</strong>. That opens a
+pre-filled email to <a href="mailto:maliangoneone@gmail.com">maliangoneone@gmail.com</a> with the
+subject "Delete my account — Augur". You can also send that email yourself from (or including)
+your sign-in email. We handle requests within 30 days. After we process the request we delete the
+Firebase sign-in account, profile, usage records/counters, and request logs. History is stored
+locally on the device and is cleared by the in-app local wipe or by uninstalling the App.</p>
+<p>An active Google Play subscription is not cancelled by account deletion; manage or cancel it
+in Google Play. Some data may be kept only where the law requires it (for example purchase, tax,
+or fraud-prevention records held by Google and RevenueCat).</p>
+<p>Step-by-step instructions:
+<a href="https://maliangone.github.io/legal/yijing-delete-account.html">Delete Account</a>.</p>
 
 <h2>7. Data security</h2>
-<p>Data in transit is protected with TLS encryption, and stored data resides in Google Cloud
-infrastructure protected by Google's security controls.</p>
+<p>Data in transit is protected with TLS encryption. Chat images are encrypted locally with a key
+protected by Android Keystore; the backend does not retain those image bytes after processing.</p>
 
 <h2>8. Children</h2>
 <p>The App is intended for a general adult audience and is not directed to children. It does not
