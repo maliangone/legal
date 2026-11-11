@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1>Privacy Policy — 读诗 (Chinese Poetry)</h1>
-<p class="muted">Last updated: 2 October 2026</p>
+<p class="muted">Last updated: 11 November 2026</p>
 
 <p>This Privacy Policy explains how the <strong>读诗 (Chinese Poetry)</strong> mobile
 application ("the App"), published by <strong>Shenbee</strong> ("we", "us"), handles
@@ -36,9 +36,38 @@ to delete support correspondence by emailing <a href="mailto:info@shenbee.com">i
 <p>Your preferences and activity — favorites, playlists, and playback settings — are stored
 <strong>locally on your device only</strong> (via the operating system's local storage). We do
 not collect, transmit, or have access to this information. Uninstalling the App removes it.</p>
-<p>Whether you have unlocked the full catalog is also stored locally. The authoritative
-purchase record for that unlock is held by the App Store you purchased through and by
+<p>Whether you have made the optional ad-removal purchase is also stored locally. The authoritative
+purchase record is held by the App Store you purchased through and by
 RevenueCat, as described in the Purchases section below.</p>
+<p>The App stores the time an iOS update reminder was shown on your device, so it can
+avoid repeating the reminder too often.</p>
+
+<h2>Online poem media</h2>
+<p>Poem illustrations, recitation audio, and analysis audio are downloaded from our hosting
+provider (Cloudflare) when you first open them, then cached on your device so they can be played
+again offline. These requests do not include an app-generated user identifier; the hosting
+provider receives ordinary request and connection data, such as your IP address. The cache is
+kept out of operating-system backups and is removed when you uninstall the App.</p>
+
+<h2>Community likes</h2>
+<p>If you use online likes, the App sends a random app-generated identifier and poem IDs to our
+service. The service stores your liked poem IDs and timestamps, plus limited rate-limit counters.
+It publishes aggregate per-poem totals without publishing your identifier or your individual like
+list. For registration limits, the service briefly processes the connection IP address as a daily
+keyed hash; the raw IP address is not written to the likes database. Network providers may
+separately process connection data.</p>
+<p>To delete this data, open Settings → Privacy and data → Delete online likes. A successful
+deletion removes the service-side identifier, your likes, and per-device usage records, then
+clears the saved token on your device. The daily aggregate hash and count used for registration
+limits are not deleted immediately; the service automatically clears old UTC-day records within
+about 72 hours. Local favorites and playlists are not affected. You can also ask us to delete it by
+emailing <a href="mailto:info@shenbee.com">info@shenbee.com</a>.</p>
+
+<h2>Update checks</h2>
+<p>The App checks for updates using Google Play on Android or Apple's App Store lookup
+service on iOS. If configured, it also requests minimum supported versions from our
+hosting provider. These services receive ordinary connection data such as IP addresses.
+The update configuration request does not include an app-generated user identifier.</p>
 
 <h2>4. Purchases</h2>
 <p>All poems, analysis, audio, and library features are available for free. The App offers an
@@ -68,7 +97,7 @@ does not use personalized cross-app advertising.</p>
 personal information from children.</p>
 
 <h2>8. Data security &amp; retention</h2>
-<p>Except for support correspondence described above, preferences stay on your device and we
+<p>Except for support correspondence and the online-likes data described above, preferences stay on your device and we
 operate no user accounts, so we do not hold those preferences on our servers. Purchase records
 held by Apple, Google, and RevenueCat are retained according to their respective policies.</p>
 
