@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F0E4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16130F" media="(prefers-color-scheme: dark)">
+<title>Delete Your Data — Still Ink</title>
+<meta name="description" content="How to delete your Still Ink (静书) data: Clear all data inside the app, what is deleted and kept, and how to ask for deletion of purchase records held by RevenueCat and the store.">
+<link rel="canonical" href="https://maliangone.github.io/legal/still-ink-delete-data.html">
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #F6F0E4;
+    --paper-raised: #FBF7EE;
+    --ink: #211D18;
+    --ink-muted: #6B6052;
+    --seal: #9A3B2E;
+    --rule: rgba(33, 29, 24, 0.16);
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Kaiti SC", "STKaiti", "KaiTi", "Songti SC", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #16130F;
+      --paper-raised: #1E1A15;
+      --ink: #EDE4D3;
+      --ink-muted: #B2A48E;
+      --seal: #D07668;
+      --rule: rgba(237, 228, 211, 0.16);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1, h2 { font-family: var(--serif); font-weight: 600; letter-spacing: 0.01em; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 0.35rem; }
+  h2 { font-size: 1.3rem; line-height: 1.35; margin: 2.6rem 0 0.6rem; }
+  h2.numbered { border-top: 1px solid var(--rule); padding-top: 1.6rem; }
+  h3 { font-size: 1.08rem; line-height: 1.4; margin: 2rem 0 0.4rem; }
+  p { margin: 0.7rem 0; }
+  .meta { color: var(--ink-muted); font-size: 0.9rem; line-height: 1.6; margin: 0 0 1.4rem; }
+  .lede {
+    background: var(--paper-raised);
+    border-left: 3px solid var(--seal);
+    border-radius: 2px;
+    padding: 0.85rem 1.1rem;
+    margin: 1.6rem 0;
+  }
+  a { color: var(--seal); text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 0.06em; }
+  a:hover { text-decoration-thickness: 0.12em; }
+  a:focus-visible { outline: 2px solid var(--seal); outline-offset: 2px; }
+  ul, ol { margin: 0.6rem 0; padding-left: 1.4rem; }
+  li { margin: 0.35rem 0; }
+  code, .subject {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.95em;
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0.05em 0.3em;
+    overflow-wrap: break-word;
+  }
+  .steps { counter-reset: step; list-style: none; padding-left: 0; }
+  .steps li { counter-increment: step; position: relative; padding-left: 2.1rem; margin: 0.7rem 0; }
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid var(--seal);
+    border-radius: 50%;
+    color: var(--seal);
+    font-size: 0.82rem;
+    line-height: 1.45rem;
+    text-align: center;
+  }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 3.5rem 0 2.2rem; }
+  [lang="zh-Hans"] { line-height: 1.85; }
+  footer { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); }
+</style>
+</head>
+<body id="top">
+<main>
+<h1>Delete Your Data — Still Ink</h1>
+<p class="meta">Last updated: 24 November 2026 · Developer: Shenbee · Contact: <a href="mailto:info@shenbee.com">info@shenbee.com</a> · <a href="#zh" lang="zh-Hans" hreflang="zh-Hans">中文</a></p>
+
+<p class="lede">Still Ink keeps your writing on your device, so you can delete it yourself at any time. There are two separate things to delete: the data on your device, and the purchase record held by the purchase service and the app store.</p>
+
+<h2 class="numbered">1. Delete everything on your device</h2>
+<p>Open <strong>Settings → Privacy and legal → Clear all data</strong>, then confirm with <strong>Delete everything</strong>. If you have a Diary, the app first asks for your device authentication (Face ID, Touch ID, fingerprint or device passcode), because clearing data destroys the Diary and its key.</p>
+<ol class="steps">
+  <li>Home → Settings (the gear on the home screen).</li>
+  <li>Scroll to <strong>Privacy and legal</strong>.</li>
+  <li>Tap <strong>Clear all data</strong> and read the confirmation.</li>
+  <li>Tap <strong>Delete everything</strong>. If a Diary exists, authenticate when asked.</li>
+</ol>
+<p>This is permanent and cannot be undone. It deletes:</p>
+<ul>
+  <li>every scroll you copied or wrote, including its ink and seals;</li>
+  <li>the Diary database, its temporary files and its encryption key;</li>
+  <li>your settings and preferences, including start choices, hints and seal settings;</li>
+  <li>temporary export files and the copies made by the system share mechanism;</li>
+  <li>the optional local counters, and any Water minutes records you had chosen to count.</li>
+</ul>
+<p>It keeps your language choice and the store-verified purchase state, so the app stays in your language and Pro can still be restored. Purchase records held by the store and RevenueCat are not deleted by this step — see section 4. Earlier device backups may still contain scrolls and settings until those backups expire; the Diary and its key are excluded from backups and are never in them.</p>
+
+<h2 class="numbered">2. Uninstalling the app</h2>
+<p>Removing Still Ink from your device deletes its private storage on that device, including any writing you did not export. A store-verified Pro purchase can be brought back after reinstalling with <strong>Restore purchases</strong> in Settings, using the same store account. Uninstalling does not delete the purchase record held by the store and RevenueCat.</p>
+
+<h2 class="numbered">3. Files you exported</h2>
+<p>Temporary export files are removed by the app after hand-off, when the Diary locks and at the next launch, and by Clear all data. Files you saved to Photos or Files, or shared with another app, are outside the app's control: delete them in that app or in your photo library. A file already handed to a recipient cannot be recalled.</p>
+
+<h2 class="numbered">4. Delete your purchase record</h2>
+<p>Pro purchase records are held by RevenueCat (our purchase service) and by Google Play or the App Store. To ask us to delete the RevenueCat record, email <a href="mailto:info@shenbee.com">info@shenbee.com</a> with this exact subject:</p>
+<p><span class="subject">Delete my data — Still Ink</span></p>
+<p>Please include, if you have them:</p>
+<ul>
+  <li>the store you bought from (Google Play or the App Store);</li>
+  <li>the product: Still Ink Pro;</li>
+  <li>the approximate purchase date;</li>
+  <li>the store order number (Google Play order ID or Apple Order ID).</li>
+</ul>
+<p>Do not send payment details. We use this information only to find and delete the record, and we may ask for enough detail to make sure the request is genuine. We delete the purchase data attached to the anonymous app user ID and any related RevenueCat record within <strong>30 days</strong> and confirm by reply.</p>
+<p>Please note:</p>
+<ul>
+  <li>Deleting the purchase record means the purchase can no longer be restored on this or another device.</li>
+  <li>It is not a refund. Refunds are handled by the store under its own policy.</li>
+  <li>We cannot delete the store's own transaction records; Google or Apple keeps those under its own policies and legal obligations.</li>
+  <li>We may keep the minimum needed to comply with legal obligations and to prove the request was handled.</li>
+</ul>
+
+<h2 class="numbered">5. Children</h2>
+<p>We do not knowingly collect personal information from children. If you believe a child has sent us personal information by email, contact us and we will delete it.</p>
+
+<h2 class="numbered">6. If you cannot use the app</h2>
+<p>If the app is already uninstalled, there is no local writing left to delete; only section 4 applies. If you cannot open the app for any reason, email us and we will help you work out what is left and how to remove it.</p>
+
+<h2 class="numbered">7. Contact and response time</h2>
+<p><a href="mailto:info@shenbee.com">info@shenbee.com</a> · we respond to deletion requests within 30 days. For how data is handled in general, see the <a href="https://maliangone.github.io/legal/still-ink-privacy.html">Privacy Policy</a>.</p>
+
+<hr>
+
+<h2 lang="zh-Hans" id="zh">中文</h2>
+<div lang="zh-Hans">
+<h1>删除你的数据 — 静书</h1>
+<p class="meta">最后更新：2026年11月24日 · 开发者：Shenbee · 联系：<a href="mailto:info@shenbee.com">info@shenbee.com</a> · <a href="#top" lang="en">English</a></p>
+
+<p class="lede">静书把你写的内容保存在你的设备上，因此你可以随时自行删除。需要删除的内容分两类：设备上的数据，以及由购买服务和应用商店保存的购买记录。</p>
+
+<h2 class="numbered">1. 删除设备上的全部数据</h2>
+<p>打开<strong>设置 → 隐私与条款 → 清除所有数据</strong>，再点击<strong>全部删除</strong>确认。如果你有日记，应用会先要求设备验证（面容 ID、触控 ID、指纹或设备密码），因为清除数据会销毁日记及其密钥。</p>
+<ol class="steps">
+  <li>主页 → 设置（主页上的齿轮）。</li>
+  <li>滚动到<strong>隐私与条款</strong>。</li>
+  <li>点击<strong>清除所有数据</strong>，阅读确认说明。</li>
+  <li>点击<strong>全部删除</strong>。若存在日记，按提示验证身份。</li>
+</ol>
+<p>此操作是永久的，无法撤销。它会删除：</p>
+<ul>
+  <li>你抄写或书写的所有卷，包括笔迹和印章；</li>
+  <li>日记数据库、其临时文件以及加密密钥；</li>
+  <li>你的设置与偏好，包括起始选择、提示和印章设置；</li>
+  <li>临时导出文件，以及系统分享机制留下的副本；</li>
+  <li>可选的本地计数，以及你选择记录的水写分钟数。</li>
+</ul>
+<p>它会保留你的语言选择和经商店验证的购买状态，因此应用仍使用你选择的语言，专业版也仍可恢复。应用商店和 RevenueCat 保存的购买记录不会因这一步而删除，见第 4 节。此前的设备备份可能仍包含卷和设置，直到那些备份过期；日记及其密钥不会进入备份，也从不包含在其中。</p>
+
+<h2 class="numbered">2. 卸载应用</h2>
+<p>从设备上移除静书会删除该设备上的私有存储，包括你没有导出的书写内容。重装后，可在设置中点击<strong>恢复购买</strong>，用同一商店账号找回经商店验证的专业版。卸载不会删除应用商店和 RevenueCat 保存的购买记录。</p>
+
+<h2 class="numbered">3. 你导出的文件</h2>
+<p>临时导出文件会在交付目标应用后、日记锁定时、下次启动时，以及清除数据时由应用删除。你存到相册或「文件」、或分享给其他应用的文件不在应用控制范围内，请在相应应用或相册中删除。已经交给接收方的文件无法撤回。</p>
+
+<h2 class="numbered">4. 删除购买记录</h2>
+<p>专业版的购买记录由 RevenueCat（我们的购买服务）以及 Google Play 或 App Store 保存。如需我们删除 RevenueCat 中的记录，请发邮件至 <a href="mailto:info@shenbee.com">info@shenbee.com</a>，主题请严格使用：</p>
+<p><span class="subject">Delete my data — Still Ink</span></p>
+<p>邮件主题保持英文即可。如方便，请附上：</p>
+<ul>
+  <li>购买所在的商店（Google Play 或 App Store）；</li>
+  <li>商品：Still Ink Pro（静书专业版）；</li>
+  <li>大致购买日期；</li>
+  <li>商店订单号（Google Play 订单 ID 或 Apple 订单 ID）。</li>
+</ul>
+<p>请勿发送支付信息。我们只用这些信息查找并删除记录，并可能要求补充足以确认请求真实性的信息。我们会在 <strong>30 天内</strong>删除与匿名应用用户 ID 关联的购买数据及相关 RevenueCat 记录，并回复确认。</p>
+<p>请注意：</p>
+<ul>
+  <li>删除购买记录后，该购买将无法在本设备或其他设备上恢复。</li>
+  <li>这不是退款。退款由商店依其政策处理。</li>
+  <li>我们无法删除商店自身的交易记录；Google 或 Apple 会依其政策和法律义务保留这些记录。</li>
+  <li>我们可能保留履行法律义务和证明已处理请求所需的最少信息。</li>
+</ul>
+
+<h2 class="numbered">5. 儿童</h2>
+<p>我们不会有意收集儿童的个人信息。如果你认为儿童通过邮件向我们发送了个人信息，请联系我们，我们会将其删除。</p>
+
+<h2 class="numbered">6. 无法使用应用时</h2>
+<p>如果应用已经卸载，本地已没有可删除的书写内容，只需按第 4 节处理。如果你因任何原因无法打开应用，请发邮件给我们，我们会帮你确认还剩下哪些数据以及如何删除。</p>
+
+<h2 class="numbered">7. 联系方式与答复时间</h2>
+<p><a href="mailto:info@shenbee.com">info@shenbee.com</a> · 我们会在 30 天内答复删除请求。关于数据处理的总体说明，见<a href="https://maliangone.github.io/legal/still-ink-privacy.html">隐私政策</a>。</p>
+</div>
+
+<footer>
+<p class="meta">Still Ink · <a href="https://maliangone.github.io/legal/still-ink-privacy.html">Privacy Policy</a> · <a href="https://maliangone.github.io/legal/still-ink-terms.html">Terms of Use</a> · <a href="https://maliangone.github.io/legal/still-ink-delete-data.html">Delete your data</a></p>
+</footer>
+</main>
+</body>
+</html>

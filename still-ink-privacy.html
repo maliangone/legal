@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F6F0E4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16130F" media="(prefers-color-scheme: dark)">
+<title>Privacy Policy — Still Ink</title>
+<meta name="description" content="How Still Ink (静书) handles your writing: local-only storage, an encrypted Diary, no ads, no analytics, purchases through the app store and RevenueCat.">
+<link rel="canonical" href="https://maliangone.github.io/legal/still-ink-privacy.html">
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #F6F0E4;
+    --paper-raised: #FBF7EE;
+    --ink: #211D18;
+    --ink-muted: #6B6052;
+    --seal: #9A3B2E;
+    --rule: rgba(33, 29, 24, 0.16);
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Kaiti SC", "STKaiti", "KaiTi", "Songti SC", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #16130F;
+      --paper-raised: #1E1A15;
+      --ink: #EDE4D3;
+      --ink-muted: #B2A48E;
+      --seal: #D07668;
+      --rule: rgba(237, 228, 211, 0.16);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1, h2 { font-family: var(--serif); font-weight: 600; letter-spacing: 0.01em; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 0.35rem; }
+  h2 { font-size: 1.3rem; line-height: 1.35; margin: 2.6rem 0 0.6rem; }
+  h2.numbered { border-top: 1px solid var(--rule); padding-top: 1.6rem; }
+  h3 { font-size: 1.08rem; line-height: 1.4; margin: 2rem 0 0.4rem; }
+  p { margin: 0.7rem 0; }
+  .meta { color: var(--ink-muted); font-size: 0.9rem; line-height: 1.6; margin: 0 0 1.4rem; }
+  .lede {
+    background: var(--paper-raised);
+    border-left: 3px solid var(--seal);
+    border-radius: 2px;
+    padding: 0.85rem 1.1rem;
+    margin: 1.6rem 0;
+  }
+  a { color: var(--seal); text-decoration: underline; text-underline-offset: 0.15em; text-decoration-thickness: 0.06em; }
+  a:hover { text-decoration-thickness: 0.12em; }
+  a:focus-visible { outline: 2px solid var(--seal); outline-offset: 2px; }
+  ul { margin: 0.6rem 0; padding-left: 1.3rem; }
+  li { margin: 0.35rem 0; }
+  code, .subject {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.95em;
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 0.05em 0.3em;
+    overflow-wrap: break-word;
+  }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 3.5rem 0 2.2rem; }
+  [lang="zh-Hans"] { line-height: 1.85; }
+  footer { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--rule); }
+</style>
+</head>
+<body id="top">
+<main>
+<h1>Privacy Policy — Still Ink</h1>
+<p class="meta">Last updated: 24 November 2026 · Developer: Shenbee · Contact: <a href="mailto:info@shenbee.com">info@shenbee.com</a> · <a href="#zh" lang="zh-Hans" hreflang="zh-Hans">中文</a></p>
+
+<p class="lede">Still Ink keeps your writing on your device. There is no account and no server that stores what you write, and the app contains no ads and no analytics.</p>
+
+<h2 class="numbered">1. Summary</h2>
+<p>Still Ink is a handwriting app: copy a classic text, write freely, and keep a private Diary. It works entirely on your device. We do not run servers or accounts for it, and we never receive your writing, your Diary or your settings unless you send them to us yourself.</p>
+<p>Network access happens only when you buy or restore Pro (through Google Play or the App Store and our purchase service, RevenueCat), when you open a web page or store listing from the app, or when you send feedback by email. There is no advertising, no analytics and no tracking in the app.</p>
+
+<h2 class="numbered">2. What stays on your device</h2>
+<ul>
+  <li><strong>Scrolls and settings.</strong> The scrolls you copy or write, their ink, seals and your preferences are stored in the app's private storage. The bundled library and its texts work offline.</li>
+  <li><strong>Diary.</strong> The Diary is kept in a separate database encrypted with SQLCipher. Its 256-bit key is held in the device's secure storage (Keychain on iOS, Keystore-backed storage on Android) and opening the Diary requires your device authentication (Face ID, Touch ID, fingerprint or device passcode). There is no recovery password, and the developer cannot read your Diary or recover it for you.</li>
+  <li><strong>Water.</strong> Writing in Water mode is never saved: strokes live in memory, fade, and are then gone. If you switch on “Count my Water minutes” (off by default), only the number of minutes is stored.</li>
+  <li><strong>Optional counters.</strong> “Keep local usage counts” (off by default) stores how many sessions and minutes you have written by mode and how many exports you have made by format. They contain no text, no identifier, no date and no reference to any scroll, and switching the option off erases them.</li>
+  <li><strong>Temporary export files.</strong> An export is written to the app's private temporary storage and removed after it is handed over or cancelled, when the Diary locks, and at the next launch. The app also removes copies made by the system share mechanism at launch, on Diary lock and when data is cleared.</li>
+  <li><strong>Backups.</strong> The Diary database, its side files and its key material are excluded from operating-system backups: Android backup and device-transfer rules skip them, and the Diary directory is marked excluded from iCloud and iTunes backup on iOS. Other app data (scrolls and settings) may be included in your device's own backup, which is controlled by your device and store account settings.</li>
+</ul>
+
+<h2 class="numbered">3. What leaves your device</h2>
+<p>Only what you explicitly send, and the purchase information described below:</p>
+<ul>
+  <li><strong>Export and share.</strong> When you export a scroll, the app creates a PNG image, a paged PDF or an InkML file and hands it to the destination you choose: the system share sheet, Save to Photos, or Save to Files. The file leaves the app at that point, and we cannot recall it. Diary exports ask you to authenticate again before anything is rendered.</li>
+  <li><strong>Photos.</strong> Save to Photos adds only the image you exported to your photo library. The app cannot read your photos.</li>
+  <li><strong>Feedback.</strong> “Send feedback” opens a new email in your mail app, addressed to info@shenbee.com, containing the app version and build, your operating system and your device model. It does not contain your writing; you decide what to add and whether to send it. Emails you send us are kept only as long as needed to answer you.</li>
+  <li><strong>Links you tap.</strong> The privacy and terms pages, the developer site, the store listing and the RevenueCat privacy policy open in your browser. Once open, the destination site's own privacy policy applies.</li>
+  <li><strong>Purchases.</strong> When you buy or restore Pro, Google Play or the App Store processes the transaction and RevenueCat validates it. They receive purchase and entitlement information, such as an anonymous app user ID, the product identifier, receipt or transaction data, and basic app and device information (for example platform, app version and approximate region). Your writing is never sent to them.</li>
+</ul>
+
+<h2 class="numbered">4. Purchases and RevenueCat</h2>
+<p>Pro is a one-time purchase with no subscription. Payment is handled by Google Play or the App Store; we never see your payment details. We use RevenueCat to validate purchases and to recognise them after a reinstall. The app does not create an account and does not ask for your name, email address or phone number, and RevenueCat identifies the purchase with an anonymous app user ID.</p>
+<p>RevenueCat processes this data as our purchase service provider. See the <a href="https://www.revenuecat.com/privacy">RevenueCat privacy policy</a> for details. A store-verified entitlement is cached on your device so Pro keeps working offline; the cached state is rechecked with the store when a connection is available. If you never make a purchase, the only purchase data involved is the anonymous entitlement check described above.</p>
+
+<h2 class="numbered">5. Permissions</h2>
+<ul>
+  <li><strong>Photos (add only, iOS) and photo-library saving (Android).</strong> Requested only when you choose Save to Photos, to write the exported image into your photo library.</li>
+  <li><strong>Biometrics / Face ID.</strong> Used only to unlock the Diary and to confirm deleting all data. Authentication is performed by the operating system; the app receives only success or failure and never stores or sends biometric data.</li>
+</ul>
+<p>The app does not request access to your location, contacts, camera, microphone or advertising ID, and it does not read your photo library.</p>
+
+<h2 class="numbered">6. Children</h2>
+<p>Still Ink is not directed to children under 13. We do not knowingly collect personal information from children. Because writing stays on the device and there are no accounts, the app does not send writing to us. If you believe a child has sent us personal information by email, contact us and we will delete it.</p>
+
+<h2 class="numbered">7. Keeping and deleting your data</h2>
+<p>Your writing stays on your device until you delete it. In Settings, under “Privacy and legal”, <strong>Clear all data</strong> permanently deletes every scroll, the Diary and its key, seals, settings, export files and counters; if a Diary exists, the app asks for device authentication first. Your language choice and the store-verified purchase state are kept. Uninstalling the app removes its local data from that device.</p>
+<p>Clear all data does not delete purchase records held by the app store and RevenueCat. To have those deleted, email <a href="mailto:info@shenbee.com">info@shenbee.com</a> with the subject <span class="subject">Delete my data — Still Ink</span>; we respond within 30 days. The step-by-step path, including what is deleted and what is kept, is on the <a href="https://maliangone.github.io/legal/still-ink-delete-data.html">Delete your data</a> page.</p>
+
+<h2 class="numbered">8. Your rights</h2>
+<p>Depending on where you live, you may have the right to access, correct, delete, restrict or object to the processing of your personal data, and to complain to a supervisory authority. In practice we hold almost nothing about you: your writing never leaves your device, and purchase-validation data is held by RevenueCat and the store on our behalf. We process it to deliver Pro and to prevent fraud. To exercise any right, email <a href="mailto:info@shenbee.com">info@shenbee.com</a>; we respond within 30 days. We do not sell personal information, we do not share it for advertising, and we do not use it for profiling.</p>
+
+<h2 class="numbered">9. Changes</h2>
+<p>We may update this policy as the app changes. The date at the top shows the latest version, and a material change is reflected here before it takes effect.</p>
+
+<h2 class="numbered">10. Contact</h2>
+<p>Shenbee · <a href="mailto:info@shenbee.com">info@shenbee.com</a> · <a href="https://shenbee.com">shenbee.com</a></p>
+
+<hr>
+
+<h2 lang="zh-Hans" id="zh">中文</h2>
+<div lang="zh-Hans">
+<h1>隐私政策 — 静书</h1>
+<p class="meta">最后更新：2026年11月24日 · 开发者：Shenbee · 联系：<a href="mailto:info@shenbee.com">info@shenbee.com</a> · <a href="#top" lang="en">English</a></p>
+
+<p class="lede">静书把你写的内容留在你的设备上。没有账号，也没有保存你书写内容的服务器；应用内没有广告，也没有统计。</p>
+
+<h2 class="numbered">1. 概述</h2>
+<p>静书是一款手写应用：抄一段经典，随手书写，留一页上锁的日记。它完全在你的设备上运行。我们不为此运营服务器或账号。除非你亲自发给我们，否则我们永远不会收到你的书写内容、日记或设置。</p>
+<p>只有在以下情况才会访问网络：购买或恢复专业版时（通过 Google Play 或 App Store 以及购买服务 RevenueCat）、你从应用内打开网页或商店页面时、你通过邮件发送反馈时。应用内没有广告、没有统计，也没有跟踪。</p>
+
+<h2 class="numbered">2. 保存在设备上的内容</h2>
+<ul>
+  <li><strong>卷与设置。</strong>你抄写或书写的卷、笔迹、印章和偏好设置保存在应用的私有存储中。内置文库及其文本可离线使用。</li>
+  <li><strong>日记。</strong>日记保存在单独的数据库中，使用 SQLCipher 加密。256 位密钥存放在设备的安全存储中（iOS 为 Keychain，Android 为基于 Keystore 的存储），打开日记需要设备验证（面容 ID、触控 ID、指纹或设备密码）。没有找回密码，开发者无法读取或替你恢复日记。</li>
+  <li><strong>水写。</strong>水写模式下的书写从不保存：笔迹只存在于内存中，渐渐消散，随后消失。如果你打开「记录水写的分钟数」（默认关闭），只会保存分钟数。</li>
+  <li><strong>可选计数。</strong>「保存本地使用计数」（默认关闭）会按模式记录书写次数与分钟数，并按格式记录导出次数。其中没有文字、没有标识符、没有日期，也不指向任何一卷；关闭该选项即会清除这些计数。</li>
+  <li><strong>临时导出文件。</strong>导出文件写在应用的私有临时存储中，在交给目标应用或取消后、日记锁定时以及下次启动时删除。应用也会在启动、日记锁定和清除数据时，删除系统分享机制留下的副本。</li>
+  <li><strong>备份。</strong>日记数据库、其附属文件和密钥材料不会进入操作系统备份：Android 的备份与设备迁移规则会跳过它们，iOS 上日记目录被标记为不进入 iCloud 和 iTunes 备份。其他应用数据（卷与设置）可能包含在你设备自身的备份中，这由你的设备和商店账号设置决定。</li>
+</ul>
+
+<h2 class="numbered">3. 会离开设备的内容</h2>
+<p>只有你明确发送的内容，以及下文所述的购买信息：</p>
+<ul>
+  <li><strong>导出与分享。</strong>导出某一卷时，应用会生成 PNG 图片、分页 PDF 或 InkML 文件，并交给你选择的目标：系统分享面板、存到相册或存到「文件」。文件在那一刻离开应用，我们无法撤回。导出日记前会再次要求你验证身份。</li>
+  <li><strong>相册。</strong>「存到相册」只会把你导出的图片写入相册。应用无法读取你的相册。</li>
+  <li><strong>反馈。</strong>「发送反馈」会在你的邮件应用中打开一封写给 info@shenbee.com 的新邮件，其中包含应用版本与构建号、操作系统和设备型号。它不包含你的书写内容；添加什么、是否发送，都由你决定。你发来的邮件只在答复所需的期间内保留。</li>
+  <li><strong>你点击的链接。</strong>隐私政策与使用条款页面、开发者网站、商店页面和 RevenueCat 隐私政策会在你的浏览器中打开。打开之后，适用目标网站自己的隐私政策。</li>
+  <li><strong>购买。</strong>购买或恢复专业版时，由 Google Play 或 App Store 处理交易，RevenueCat 负责验证。它们会收到购买与权益信息，例如匿名的应用用户 ID、商品标识符、收据或交易数据，以及基本的应用与设备信息（例如平台、应用版本和大致地区）。你写的内容绝不会发送给它们。</li>
+</ul>
+
+<h2 class="numbered">4. 购买与 RevenueCat</h2>
+<p>专业版是一次性购买，没有订阅。支付由 Google Play 或 App Store 处理，我们看不到你的支付信息。我们使用 RevenueCat 验证购买，并在重装后识别购买。应用不创建账号，也不会询问你的姓名、邮箱或电话号码；RevenueCat 使用匿名的应用用户 ID 标识这笔购买。</p>
+<p>RevenueCat 作为我们的购买服务提供方处理这些数据，详情见 <a href="https://www.revenuecat.com/privacy">RevenueCat 隐私政策</a>。经商店验证的权益会缓存在你的设备上，以便专业版离线可用；有网络时会再次向商店核对。如果你从未购买，涉及的购买数据仅限于上述匿名的权益核对。</p>
+
+<h2 class="numbered">5. 权限</h2>
+<ul>
+  <li><strong>相册（iOS 仅添加）与相册保存（Android）。</strong>只有在你选择「存到相册」时才会请求，用于把导出的图片写入相册。</li>
+  <li><strong>生物识别 / 面容 ID。</strong>仅用于解锁日记和确认删除全部数据。验证由操作系统完成；应用只会收到成功或失败，从不存储或发送生物识别数据。</li>
+</ul>
+<p>应用不会请求位置、通讯录、相机、麦克风或广告 ID，也不会读取你的相册。</p>
+
+<h2 class="numbered">6. 儿童</h2>
+<p>静书不面向 13 岁以下儿童。我们不会有意收集儿童的个人信息。书写内容保存在设备上，也没有账号，因此应用不会把书写内容发送给我们。如果你认为儿童通过邮件向我们发送了个人信息，请联系我们，我们会将其删除。</p>
+
+<h2 class="numbered">7. 数据的保留与删除</h2>
+<p>你写的内容会一直留在设备上，直到你删除它。在设置中，「隐私与条款」下的<strong>清除所有数据</strong>会永久删除所有卷、日记及其密钥、印章、设置、导出文件和计数；如果存在日记，应用会先要求设备验证。你的语言选择和经商店验证的购买状态会保留。卸载应用会删除该设备上的本地数据。</p>
+<p>清除数据不会删除应用商店和 RevenueCat 保存的购买记录。如需删除这些记录，请发邮件至 <a href="mailto:info@shenbee.com">info@shenbee.com</a>，主题填写 <span class="subject">Delete my data — Still Ink</span>；我们会在 30 天内答复。逐步操作、哪些内容会被删除、哪些会保留，见<a href="https://maliangone.github.io/legal/still-ink-delete-data.html">删除数据</a>页。</p>
+
+<h2 class="numbered">8. 你的权利</h2>
+<p>根据你所在地区的法律，你可能有权访问、更正、删除、限制或反对处理你的个人数据，并向监管机构投诉。实际上我们几乎不持有关于你的数据：你的书写内容从不离开设备，购买验证数据由 RevenueCat 和商店代我们保存。我们处理这些数据是为了提供专业版并防止欺诈。如需行使任何权利，请发邮件至 <a href="mailto:info@shenbee.com">info@shenbee.com</a>；我们会在 30 天内答复。我们不出售个人信息，不将其用于广告，也不用于画像。</p>
+
+<h2 class="numbered">9. 变更</h2>
+<p>我们可能随应用的变化更新本政策。顶部的日期是最新版本；重要变更会在生效前反映在这里。</p>
+
+<h2 class="numbered">10. 联系我们</h2>
+<p>Shenbee · <a href="mailto:info@shenbee.com">info@shenbee.com</a> · <a href="https://shenbee.com">shenbee.com</a></p>
+</div>
+
+<footer>
+<p class="meta">Still Ink · <a href="https://maliangone.github.io/legal/still-ink-privacy.html">Privacy Policy</a> · <a href="https://maliangone.github.io/legal/still-ink-terms.html">Terms of Use</a> · <a href="https://maliangone.github.io/legal/still-ink-delete-data.html">Delete your data</a></p>
+</footer>
+</main>
+</body>
+</html>
